@@ -14,9 +14,7 @@ label is not graded.
 ## Your pull request
 
 **Pull request**
-
-[Link to the pull request you opened. It must be the pull request's own page on the Path
-Review repo, not your fork's branch page.]
+https://github.com/codepath/pathreview-ai301-fa26-s1/pull/197
 
 **Branch**
 
