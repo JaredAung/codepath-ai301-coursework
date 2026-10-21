@@ -55,10 +55,9 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Built issue-scout and a Python and React search strategy, then patched the rubric after the first scan.**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I built issue-scout from the Unit 1 skill and wrote four `gh search issues` queries from the fit profile, Python and TypeScript with React under both `good first issue` and `good-first-issue`, with filters that drop assigned issues, keep the last 90 days, and order by fewest comments, at most two issues per repo. On 2026-10-20 the scan graded five issues and accepted only selimfirat/pysad#373. Four of those five were under 100 stars, because search results do not include a star count, and an earlier newest-update tie-break had filled a shortlist with issues opened the same hour. I split stars into a required 100-star check and a preferred 500-star check, dropped that tie-break, taught `ai-allowed` to read `AGENTS.md`, and made `unclaimed` fail only when a pull request references that issue.
 
 **Unit 6: [one line on the tool work]**
 
