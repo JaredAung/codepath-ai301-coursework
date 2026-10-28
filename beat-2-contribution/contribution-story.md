@@ -1,4 +1,4 @@
-# Contribution: [Issue Title]
+# Contribution: [GOOD FIRST ISSUE] Add VectorStoreFactorySpec: backend names, file-backed SQLite and Qdrant factory paths
 
 Path: `beat-2-contribution/contribution-story.md`
 
@@ -8,9 +8,9 @@ format criteria grade exactly that. Your course repo link is the whole submissio
 files and no evidence uploads are part of Assignment 5.
 
 **Contribution Number:** [1]
-**Student:** Jared Aung 
-**GitHub Username:** Jared Aung 
-**Issue:** [GitHub issue link]
+**Student:** Jared Aung
+**GitHub Username:** JaredAung
+**Issue:** https://github.com/llm4s/llm4s/issues/2225
 **Pull Request:** [GitHub PR link, once opened]
 
 One repository, built across units 5 to 8, telling the whole story of your real
@@ -78,24 +78,16 @@ drafted, what you did with the draft.]
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs in your own words: how you searched, what your scan
-surfaced, what your scout's verdict said, why this issue fits your
-profile, and what you hope to learn. If your scout's verdict on it
-was reject and you chose it anyway, say so here and say why; choosing
-against your own tool silently is what loses points. Close with an
-honest read of the tool itself: where the scout fell short on a real
-wild search and what you changed or would change, or what convinced
-you it held up. **Record the link to your claim comment in this section too.**
-Not claimed yet? Write `claim pending` and today's date where the link goes,
-and add the link the moment your claim lands.]
+The 2026-10-20 scan did not surface this issue. Four queries built a top 5, and the scout accepted only selimfirat/pysad#373. The other four failed `repo-min-stars`. I graded [llm4s/llm4s#2225](https://github.com/llm4s/llm4s/issues/2225) later, in direct mode, on 2026-10-27. The verdict was `accept`. Every required check passed, including `scope-feasible`: one new spec, `VectorStoreFactorySpec.scala`, with the cases listed. `repo-widely-used` failed at 277 stars and did not change the verdict. The difficulty note was straightforward. The issue names the file, the spec to copy (`VectorStoreSpec.scala`), and the cases, and the tests run offline.
+
+It is Scala, not the Python or React work in my fit profile. I took it because the expected behavior is written down and the work is a test I can make fail on purpose. I want to learn how to read a factory I have not seen, confirm the uncovered branches, and keep the spec inside the issue: `Backend.fromString`, file-backed SQLite, the offline Qdrant paths, `KeywordIndex.sqlite`, and `HybridSearcher.sqlite`, with pgvector left out. The scan still cannot see stars until grading, so most of a shortlist can be rejects. That part did not hold up. The direct grade did: it found no assignee and no comments, it did not let fit overturn the verdict, and the difficulty note told me the edge was small. Claim comment: https://github.com/llm4s/llm4s/issues/2225#issuecomment-6460109390
 
 **Toolkit**
 
-- Tool: issue-scout (your scout: your search strategy, your rubric),
-  and how you used it
-- What it produced: [the scan and its verdict on this issue, described]
-- Difficulties: [where it fell short, or "none met" if none did]
-- What changed: [what you patched or would update, or "nothing"]
+- Tool: issue-scout, direct mode on llm4s/llm4s#2225, after the 2026-10-20 scan
+- What it produced: verdict `accept`, difficulty straightforward. `scope-feasible` passed. `repo-widely-used` failed at 277 stars and did not change the verdict.
+- Difficulties: the scan never returned this issue, and `gh search issues` still has no star count, so four of the five issues graded on 2026-10-20 failed `repo-min-stars`. Fit is Python and React. The rubric accepted a Scala test issue because fit cannot change a verdict. `ai-allowed` passed on silence in `CONTRIBUTING.md`. The read-out stayed in the session until it was copied into `scan-output.md`.
+- What changed: the scope patch. Unit 1 had no row for whether an issue is one piece of work, so nothing rejected an umbrella issue and nothing recorded an open edge. I added required check `scope-feasible`, which fails only when there is no single piece of work, and a difficulty note under the checks table. The note does not change accept or reject. On this issue it came back straightforward.
 
 ---
 
